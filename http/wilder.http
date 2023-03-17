@@ -1,0 +1,39 @@
+PUT http://localhost:5000/api/wilder/1
+Content-Type: application/json
+
+{
+    "name": "REST Client Wilder",
+}
+
+###
+GET http://localhost:5000/api/wilder
+
+###
+DELETE http://localhost:5000/api/wilder/1
+
+###
+POST http://localhost:5000/api/wilder
+Content-Type: application/json
+
+{
+    "name": "REST Client",
+    "city": "Paris"
+}
+
+###
+PUT http://localhost:5000/api/addSkill
+Content-Type: application/json
+
+{
+    "wilderName": "REST Client",
+    "skills": [{"skillName": "JS", "grade": 9},{"skillName": "PHP", "grade": 8}]
+}
+
+###
+PUT http://localhost:5000/api/wilder/changeSkillScore
+Content-Type: application/json
+
+{
+    "skillId": 2,
+    "grade": 4
+}
